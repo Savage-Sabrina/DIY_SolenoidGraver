@@ -2,12 +2,12 @@
 An ATMEGA328P based Mosfet controller for solenoid.
 I got into jewelry making in 2010 to pay for my college expenses. After graduating as a mechanical engineer I realized part of my knowledge should not be wasted and should be applied into something I like.
 After looking into the options on a pneumatic graver I realized it was either too expensive or bulky. 
-I would not have space for a compressor because I lived in a small room on a fraternity.
+I would not have space for a compressor because I lived in a small room on a shared house.
 This is, then, my approach to a solenoid based graver machine.
 You could check other approaches like https://github.com/alastair-duncan/SuperEZGraver and also the https://www.youtube.com/channel/UCE2rGFm1-xs-WIEHfY1enjA.
-The focus I want to bring is of a solenoid for stone setting and fine work.
+The focus I want to bring is of a solenoid for stone setting and fine work, although the power is only limited by the solenoid chosen, buck converter and MOSFET.
 
-If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program this will cover mainly a way to make the controller. There will be a way to make a handpiece using commercial components.
+If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program this will cover mainly a way to make the controller, there's also the option to build it with hobby parts. There will be a way to make a handpiece using commercial components.
 
 # **Starting the project**
 I am sharing this to provide more information on what might be necessary to build your own solenoid engraving machine.
@@ -22,6 +22,7 @@ None of the links shared in this guide are affiliate links.
 
 The intent with this guide is to provide knowledge and maybe a bit of opportunity to those who cannot afford a commercial machine or do not have access to the means necessary to get hold of one. I know how it feels to “plan” to buy a machine if we save 50% of our income for the next 5 years to be able to afford the basic version without accessories to run it. No infringement of copyright or patent is intended.
 
+---
 Follow this tutorial at your own risk.
 # **The solenoid**
 The solenoid used should be strong enough to provide the magnetic field but light enough not to be bulky and on the way when engraving. The voltage rating as well as the duty cycle should be compatible with the usage.
@@ -35,8 +36,10 @@ The disadvantage of this solenoid is that the diameter of the impact shaft will 
 Another disadvantage of this model is that the solenoid cannot release enough heat and might overheat, solutions to this are:
 
 1. Make a heatsink for it.
-1. Manufacture an open handpiece to allow airflow.
-1. Usage of a [Flyback Diode](https://en.wikipedia.org/wiki/Flyback_diode) to remove voltage spikes from the coils. **(This one is actually mandatory)**
+2. Manufacture an open handpiece to allow airflow.
+3. Usage of a [Flyback Diode](https://en.wikipedia.org/wiki/Flyback_diode) to remove voltage spikes from the coils. **(This one is actually mandatory)**
+
+
 ## **Custom Solenoid**
 If you intend to produce your own solenoid there are some considerations that should be put in place that will make your life easier:
 
@@ -49,6 +52,7 @@ If you intend to produce your own solenoid there are some considerations that sh
 A plunger with the dimensions below and a handmade spring with a 0.5mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring.
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.003.png)
+---
 # **The handpiece**
 After some iterations and failures I want to bring some insights to the design if you want to use the one developed or project your own.
 
@@ -62,7 +66,7 @@ This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.006.jpeg)![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.007.jpeg)
 
-
+---
 # **Controller**
 For the controller I went with 2 different platforms, one with a Raspberry PI PICO to have a touch interface and better PWM controls and an Arduino to make things cheaper and accessible to the majority of people.
 
@@ -102,6 +106,7 @@ What has to be done is to:
    1. Direct mode, the handpiece goes to maximum power instantaneously according to duty and frequency selected.
 1. Test the board without the solenoid handpiece in place and look into the LED of the mosfet to look for it blinking.
 1. Assemble everything and test it for a split second to verify short circuits in your assembled handpiece. To avoid heating don't forget the Flyback diode.
+***
 # **Final considerations**
 If you feel that something should be changed or is wrong feel free to inform me or to perform your own modifications. If you need assistance with the project please message me on reddit u/Weird\_Singularity.
 
