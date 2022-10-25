@@ -5,9 +5,10 @@ After looking into the options on a pneumatic graver I realized it was either to
 I would not have space for a compressor because I lived in a small room on a shared house.
 This is, then, my approach to a solenoid based graver machine.
 You could check other approaches like https://github.com/alastair-duncan/SuperEZGraver and also the https://www.youtube.com/channel/UCE2rGFm1-xs-WIEHfY1enjA.
+
 The focus I want to bring is of a solenoid for stone setting and fine work, although the power is only limited by the solenoid chosen, buck converter and MOSFET.
 
-If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program this will cover mainly a way to make the controller, there's also the option to build it with hobby parts. There will be a way to make a handpiece using commercial components.
+If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program, this will cover mainly a way to make the controller and handpiece with hobby parts. There is also the option to build a custom board with everything integrated already, which is inside the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board)
 
 # **Starting the project**
 I am sharing this to provide more information on what might be necessary to build your own solenoid engraving machine.
@@ -22,8 +23,9 @@ None of the links shared in this guide are affiliate links.
 
 The intent with this guide is to provide knowledge and maybe a bit of opportunity to those who cannot afford a commercial machine or do not have access to the means necessary to get hold of one. I know how it feels to “plan” to buy a machine if we save 50% of our income for the next 5 years to be able to afford the basic version without accessories to run it. No infringement of copyright or patent is intended.
 
----
 Follow this tutorial at your own risk.
+
+---
 # **The solenoid**
 The solenoid used should be strong enough to provide the magnetic field but light enough not to be bulky and on the way when engraving. The voltage rating as well as the duty cycle should be compatible with the usage.
 
@@ -52,6 +54,7 @@ If you intend to produce your own solenoid there are some considerations that sh
 A plunger with the dimensions below and a handmade spring with a 0.5mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring.
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.003.png)
+
 ---
 # **The handpiece**
 After some iterations and failures I want to bring some insights to the design if you want to use the one developed or project your own.
@@ -68,7 +71,7 @@ This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&
 
 ---
 # **Controller**
-For the controller I went with 2 different platforms, one with a Raspberry PI PICO to have a touch interface and better PWM controls and an Arduino to make things cheaper and accessible to the majority of people.
+For the controller I went with 2 different platforms, one with a Raspberry PI PICO to have a touch interface and better PWM controls and an Arduino to make things cheaper and accessible to the majority of people. I projected a custom board that contains all the components in one, the board is only aimed at people that really know what they are doing, you can find it in the [custom board folder](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board)
 
 In this document I will handle only the Arduino version of the controller as it is the simplest and readily available. For the Raspberry version I realized that the version of the software installed as well as the version of MicroPython impacted on the controls and had some bugs and differences. The parts referenced are just a guideline, they are not exclusive or irreplaceable.
 
@@ -94,9 +97,9 @@ The schematics of the connection is as shown below:
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.008.png)
 
-The complete schematics are in the shared folder with a PDF file.
+The complete schematics are [in the shared folder](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic) with a .PDF or .PNG file.
 
-What has to be done is to:
+What has to be done when assembling it safelly:
 
 1. Check if all the connections are in place apart from the PSU.
 1. Connect the Arduino to the pc and use the ArduinoIDE interface to check the code.
@@ -104,10 +107,16 @@ What has to be done is to:
    1. Frequency mode, you choose the frequency and the duty cycle with the potentiometers, the pedal will change the power input according to the selection, the information is shown on the LCD.
    1. Pulse mode, the handpiece will give a certain amount of pulses according to frequency and duty, the pulses go to maximum power at start and stop for half a second then continue within a defined interval.
    1. Direct mode, the handpiece goes to maximum power instantaneously according to duty and frequency selected.
-1. Test the board without the solenoid handpiece in place and look into the LED of the mosfet to look for it blinking.
-1. Assemble everything and test it for a split second to verify short circuits in your assembled handpiece. To avoid heating don't forget the Flyback diode.
+1. Test the board without the solenoid handpiece or PSU in place and look at the LED of the mosfet to look for it blinking.
+2. Use a weaker PSU just to check the main connections.
+3. Assemble everything and test it for a split second to verify short circuits in your assembled handpiece. To avoid heating of the handpiece don't forget the Flyback diode.
+4. Enjoy!
+
 ***
 # **Final considerations**
-If you feel that something should be changed or is wrong feel free to inform me or to perform your own modifications. If you need assistance with the project please message me on reddit u/Weird\_Singularity.
+
+If you feel that something should be changed or is wrong feel free to inform me or to perform your own modifications.
+Suggestions are always welcome, I had a brief contact with a professional grade engraver in order to feel the impact in the hand and tool behavior which was not enough to feel the nuances of the machine.
+If you need assistance with the project please message me on reddit u/Weird\_Singularity.
 
 
