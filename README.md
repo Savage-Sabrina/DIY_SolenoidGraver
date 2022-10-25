@@ -100,7 +100,7 @@ What has to be done is to:
 
 1. Check if all the connections are in place apart from the PSU.
 1. Connect the Arduino to the pc and use the ArduinoIDE interface to check the code.
-1. Upload the code for the desired control, in this case the newest is the code BetaVersion0.2LCD+VariableFootPedal.ino, which will have 3 modes:
+1. Upload the [Arduino code](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/blob/34cf9a5d53c3de1b95fa2ae14cb3af24335a9292/Arduino%20Code/BetaVersion0.2LCD+VariableFootPedal.ino) for the desired control, which will have 3 modes:
    1. Frequency mode, you choose the frequency and the duty cycle with the potentiometers, the pedal will change the power input according to the selection, the information is shown on the LCD.
    1. Pulse mode, the handpiece will give a certain amount of pulses according to frequency and duty, the pulses go to maximum power at start and stop for half a second then continue within a defined interval.
    1. Direct mode, the handpiece goes to maximum power instantaneously according to duty and frequency selected.
