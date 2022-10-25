@@ -1,0 +1,1 @@
+There were some rounding errors on the considerations and after several 'safety factors' in the reating label it was assumed that the board would handle 15V 5A, which was stamped 12V in the board but the board has been used with a PSU that is 18.5V 4.3A.
