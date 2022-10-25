@@ -30,7 +30,7 @@ A better solution would be to have a commercially available solenoid as the impa
 
 The disadvantage of this solenoid is that the diameter of the impact shaft will make it crooked after approx. 300h of use in maximum load (based on tests with impact on an upstanding weight of 40 grams), which is reasonably long but not something to be disregarded.
 
-![53757-81 | Deltrol Linear Solenoid, 12 V dc, 35.9N, 1.4 (Stroke N @ 0.75  in), 25.4 (Dia.) x 60.33 mm | RS](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.001.jpeg)![ITS-LZ 1335-D – RED MAGNETICS](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.002.png)
+![53757-81 | Deltrol Linear Solenoid, 12 V dc, 35.9N, 1.4 (Stroke N @ 0.75  in), 25.4 (Dia.) x 60.33 mm | RS](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.001.jpeg)![ITS-LZ 1335-D – RED MAGNETICS](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.002.png)
 
 Another disadvantage of this model is that the solenoid cannot release enough heat and might overheat, solutions to this are:
 
@@ -48,19 +48,19 @@ If you intend to produce your own solenoid there are some considerations that sh
 
 A plunger with the dimensions below and a handmade spring with a 0.5mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring.
 
-![](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.003.png)
+![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.003.png)
 # **The handpiece**
 After some iterations and failures I want to bring some insights to the design if you want to use the one developed or project your own.
 
-![](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.004.png)
+![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.004.png)
 
 For a design that can be assembled with minimal tools and an optional 3d printer you can check my page. The good thing about being open is that we can be sure that people will create better options than our own idea.
 
-![](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.005.png)
+![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.005.png)
 
 This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&S to enhance the structure of the parts. The tube that fits the [GRS tool holder](https://grs.com/product/grs-quickchange-handle/) is a [9/32 inch tube from K&S metals](https://ksmetals.com/collections/12-round-brass-tubing/products/br029-9-32), it can be used as a sleeve to make the plast stronger and for the collet to slide easier. If you want to make your own design this tube fits in a 3d printed hole of 7.2mm better due to the approximation of a circle to a polygon.
 
-![](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.006.jpeg)![](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.007.jpeg)
+![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.006.jpeg)![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.007.jpeg)
 
 
 # **Controller**
@@ -88,7 +88,7 @@ For the Arduino pinout any variant can be used. The model represented in the sch
 
 The schematics of the connection is as shown below:
 
-![](Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.008.png)
+![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.008.png)
 
 The complete schematics are in the shared folder with a PDF file.
 
