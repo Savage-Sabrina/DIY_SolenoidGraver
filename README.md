@@ -7,5 +7,7 @@ This is, then, my approach to a solenoid based graver machine.
 You could check other approaches like https://github.com/alastair-duncan/SuperEZGraver and also the https://www.youtube.com/channel/UCE2rGFm1-xs-WIEHfY1enjA.
 The focus I want to bring is of a solenoid for stone setting and fine work.
 
-If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program this will cover mainly a way to make the controller. There will be a way to make a handpiece but still not a fine tuned one.
+If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program this will cover mainly a way to make the controller. There will be a way to make a handpiece using commercial components.
+
+
 
