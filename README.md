@@ -52,7 +52,7 @@ If you intend to produce your own solenoid there are some considerations that sh
 1. Do not forget the flyback diode as mentioned before.
 1. Make sure the wire for the coil can handle the voltage and current to avoid melting and increased temperature.
 
-A plunger with the dimensions below and a handmade spring with a 0.5mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring.
+A plunger with the dimensions below and a handmade spring with a 0.2mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring.
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.003.png)
 
@@ -66,7 +66,9 @@ For a design that can be assembled with minimal tools and an optional 3d printer
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.005.png)
 
-This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&S to enhance the structure of the parts. The tube that fits the [GRS tool holder](https://grs.com/product/grs-quickchange-handle/) is a [9/32 inch tube from K&S metals](https://ksmetals.com/collections/12-round-brass-tubing/products/br029-9-32), it can be used as a sleeve to make the plast stronger and for the collet to slide easier. If you want to make your own design this tube fits in a 3d printed hole of 7.2mm better due to the approximation of a circle to a polygon.
+This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&S to enhance the structure of the parts. The tube that fits the [GRS tool holder](https://grs.com/product/grs-quickchange-handle/) is a [5/16 inch tube from K&S metals](https://ksmetals.com/products/br029-5-16?_pos=1&_psq=5%2F16&_ss=e&_v=1.0), it can be used as a sleeve to make the plast stronger and for the collet to slide easier. If you want to make your own design this tube fits in a 3d printed hole of 7.2mm better due to the approximation of a circle to a polygon.
+For a better fit, with some adjustments, the standard tube 3/8" 16 gauge will have a tight grip on the GRS collet. Although not ideal it can be sanded up to the allow movement when hit. The tube can be found on steel, which is a bit harder to work but more durable, or brass.
+Some other options can be considered, like using machining services offered online for a perfect fit with the internal dimension of 1/4" or 6.35 mm. With this approach you can not only make your own handpiece but also your own quick change handle.
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.006.jpeg)![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.007.jpeg)
 
@@ -74,7 +76,7 @@ This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&
 # **Controller**
 For the controller I went with 2 different platforms, one with a Raspberry PI PICO to have a touch interface and better PWM controls and an Arduino to make things cheaper and accessible to the majority of people. I projected a custom board that contains all the components in one, the board is only aimed at people that really know what they are doing, you can find it in the [custom board folder](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board)
 
-In this document I will handle only the Arduino version of the controller as it is the simplest and readily available. For the Raspberry version I realized that the version of the software installed as well as the version of MicroPython impacted on the controls and had some bugs and differences. The parts referenced are just a guideline, they are not exclusive or irreplaceable.
+In this document I will handle only the Arduino version of the controller as it is the simplest and readily available. For the Raspberry version I realized that the version of the software installed as well as the version of MicroPython impacted on the controls and had some bugs and differences due to the GPIO.PWM frequency limitations. The parts referenced are just a guideline, they are not exclusive or irreplaceable.
 
 Necessary parts:
 
