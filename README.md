@@ -68,7 +68,12 @@ For a design that can be assembled with minimal tools and an optional 3d printer
 
 This design allows you to use a 1335 solenoid and a 9/16 inch brass tube from K&S to enhance the structure of the parts. The tube that fits the [GRS tool holder](https://grs.com/product/grs-quickchange-handle/) is a [5/16 inch tube from K&S metals](https://ksmetals.com/products/br029-5-16?_pos=1&_psq=5%2F16&_ss=e&_v=1.0), it can be used as a sleeve to make the plast stronger and for the collet to slide easier. If you want to make your own design this tube fits in a 3d printed hole of 7.2mm better due to the approximation of a circle to a polygon.
 For a better fit, with some adjustments, the standard tube 3/8" 16 gauge will have a tight grip on the GRS collet. Although not ideal it can be sanded up to the allow movement when hit. The tube can be found on steel, which is a bit harder to work but more durable, or brass.
-Some other options can be considered, like using machining services offered online for a perfect fit with the internal dimension of 1/4" or 6.35 mm. With this approach you can not only make your own handpiece but also your own quick change handle.
+Some other options can be considered, like using machining services offered online for a perfect fit with the internal dimension of 1/4" or 6.35 mm. With this approach you can not only make your own handpiece but also your own quick change handle. The sleeve should look like the image below.
+
+![](Pictures/image.png)
+
+This thicker sleeve would replace the thin K&S Tube pirctured below. I got better results with this snaded version of the brass tube.
+
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.006.jpeg)![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.007.jpeg)
 
