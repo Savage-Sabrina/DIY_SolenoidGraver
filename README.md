@@ -30,7 +30,7 @@ Follow this tutorial at your own risk.
 # **The solenoid**
 The solenoid used should be strong enough to provide the magnetic field but light enough not to be bulky and on the way when engraving. The voltage rating as well as the duty cycle should be compatible with the usage.
 
-A better solution would be to have a commercially available solenoid as the impact source, this would provide some maintenance possibilities. A good choice would be the [ITS-LZ-1335-D-24VDC](https://www.elpro.org/gb/red-magnetics-its-lz-series/32677-its-lz-1335-d-24vdc.html) solenoid (The name 1335 means 13mm X 35mm, some companies use the 13x27 which disconsiders the thread length).
+A better solution would be to have a commercially available solenoid as the impact source, this would provide some maintenance possibilities. A good choice would be the 12V version of the solenoid 1335. [ITS-LZ-1335-D-24VDC](https://www.elpro.org/gb/red-magnetics-its-lz-series/32677-its-lz-1335-d-24vdc.html) solenoid (The name 1335 means 13mm X 35mm, some companies use the 13x27 which disconsiders the thread length).
 
 The disadvantage of this solenoid is that the diameter of the impact shaft will make it crooked after approx. 300h of use in maximum load (based on tests with impact on an upstanding weight of 40 grams), which is reasonably long but not something to be disregarded.
 
