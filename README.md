@@ -7,7 +7,7 @@ This is, then, my approach to a solenoid based graver machine.
 You could check other approaches like https://github.com/alastair-duncan/SuperEZGraver and also the https://www.youtube.com/channel/UCE2rGFm1-xs-WIEHfY1enjA.
 
 The focus I want to bring is of a solenoid for stone setting and fine work, although the power is only limited by the solenoid chosen, buck converter and MOSFET.
-You can check videos of it working on [YouTube](https://www.youtube.com/user/selvalss/videos). All tests were performed in the Direct Mode, as programmed in the _Controller_ section below.
+You can check videos of it working on [YouTube](https://www.youtube.com/user/selvalss/videos) and the results I got with it [here](https://youtu.be/fjaF6JF7hFk). All tests were performed in the Direct Mode, as programmed in the _Controller_ section below.
 
 If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program, this will cover mainly a way to make the controller and handpiece with hobby parts. There is also the option to build a custom board with everything integrated already, which is inside the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board)
 
