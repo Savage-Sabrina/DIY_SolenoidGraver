@@ -1,3 +1,5 @@
+For a full in depth review of the solenoid choices please watch the video about the perks and configuration of each magnet below. [Youtube video about the solenoids and handpiece](https://www.youtube.com/watch?v=2lFhfABcx04)
+
 The first solenoid I tested was the smallest 5v solenoid i could get just to prove the concept. [Small solenoid](https://www.adafruit.com/product/2776)
 ![small 5V solenoid](https://user-images.githubusercontent.com/13701387/123425489-8106a480-d5c2-11eb-8b57-86754660a24c.jpg)
 
