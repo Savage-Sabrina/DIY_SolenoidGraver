@@ -122,7 +122,7 @@ What has to be done when assembling it safelly:
 ---
 # **Custom board V2**
 The custom board below has already the connections made and it's only up to you to connect the power lines, pedal, graver and your own Arduino Nano. You can order the boards on PCB manufacturers that send it to the whole world like PCBWay and JLCPcb.
-You can find the design on the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board%V2)
+You can find the design on the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board%20V2)
 The design is divided in 2 parts, the Arduino Nano Board and the Controll Board with buttons and potentiometers as shown below:
 ![](Pictures/PCBControllBoardSimplified.png)
 ![](Pictures/PCBMainPannelArduinoNano.png)
