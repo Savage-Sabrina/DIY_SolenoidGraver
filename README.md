@@ -78,7 +78,7 @@ This thicker sleeve would replace the thin K&S Tube pirctured below. I got bette
 
 ---
 # **Controller**
-For the controller I went with 2 different platforms, one with a Raspberry PI PICO to have a touch interface and better PWM controls and an Arduino to make things cheaper and accessible to the majority of people. I projected a custom board that contains all the components in one, the board is only aimed at people that really know what they are doing, you can find it in the [custom board folder](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board)
+For the controller I went with 2 different platforms, one with a Raspberry PI PICO to have a touch interface and better PWM controls and an Arduino to make things cheaper and accessible to the majority of people. I projected a custom board that contains all the components in one, the board is only aimed at people that really know what they are doing, you can find it in the [custom board folder](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20Board%20V2)
 
 In this document I will handle only the Arduino version of the controller as it is the simplest and readily available. For the Raspberry version I realized that the version of the software installed as well as the version of MicroPython impacted on the controls and had some bugs and differences due to the GPIO.PWM frequency limitations. The parts referenced are just a guideline, they are not exclusive or irreplaceable.
 
@@ -122,7 +122,7 @@ What has to be done when assembling it safelly:
 ---
 # **Custom board V2**
 The custom board below has already the connections made and it's only up to you to connect the power lines, pedal, graver and your own Arduino Nano. You can order the boards on PCB manufacturers that send it to the whole world like PCBWay and JLCPcb.
-You can find the design on the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board%20V2)
+You can find the design on the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20Board%20V2)
 The design is divided in 2 parts, the Arduino Nano Board and the Controll Board with buttons and potentiometers as shown below:
 ![](Pictures/PCBControllBoardSimplified.png)
 ![](Pictures/PCBMainPannelArduinoNano.png)
