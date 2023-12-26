@@ -1,15 +1,16 @@
 # GraverController
-An ATMEGA328P based Mosfet controller for solenoid.
+An Arduino Nano based Mosfet controller for solenoid graver.
+
 I got into jewelry making in 2010 to pay for my college expenses. After graduating as a mechanical engineer I realized part of my knowledge should not be wasted and should be applied into something I like.
 After looking into the options on a pneumatic graver I realized it was either too expensive or bulky. 
 I would not have space for a compressor because I lived in a small room on a shared house.
 This is, then, my approach to a solenoid based graver machine.
-You could check other approaches like https://github.com/alastair-duncan/SuperEZGraver and also the https://www.youtube.com/channel/UCE2rGFm1-xs-WIEHfY1enjA.
+You could check other approaches like https://github.com/alastair-duncan/SuperEZGraver,  https://www.youtube.com/channel/UCE2rGFm1-xs-WIEHfY1enjA and also my favorite interface https://github.com/Billiam/gravedriver.
 
 The focus I want to bring is of a solenoid for stone setting and fine work, although the power is only limited by the solenoid chosen, buck converter and MOSFET.
 You can check videos of it working on [YouTube](https://www.youtube.com/user/selvalss/videos) and the results I got with it [here](https://youtu.be/fjaF6JF7hFk). All tests were performed in the Direct Mode, as programmed in the _Controller_ section below.
 
-If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program, this will cover mainly a way to make the controller and handpiece with hobby parts. There is also the option to build a custom board with everything integrated already, which is inside the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board)
+If you are handy in terms of Arduino coding and making breadboard circuits this will be super easy to make and program, this will cover mainly a way to make the controller and handpiece with hobby parts. There is also the option to build a custom board with everything integrated already, which is inside the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board%V2) This last option has the benefit of being tidy and you have also all the 3d files to make it look good and functionally tested.
 
 # **Starting the project**
 I am sharing this to provide more information on what might be necessary to build your own solenoid engraving machine.
@@ -23,8 +24,6 @@ With this I assume that you are:
 None of the links shared in this guide are affiliate links.
 
 The intent with this guide is to provide knowledge and maybe a bit of opportunity to those who cannot afford a commercial machine or do not have access to the means necessary to get hold of one. I know how it feels to “plan” to buy a machine if we save 50% of our income for the next 5 years to be able to afford the basic version without accessories to run it. No infringement of copyright or patent is intended.
-
-Follow this tutorial at your own risk.
 
 ---
 # **The solenoid**
@@ -52,7 +51,7 @@ If you intend to produce your own solenoid there are some considerations that sh
 1. Do not forget the flyback diode as mentioned before.
 1. Make sure the wire for the coil can handle the voltage and current to avoid melting and increased temperature.
 
-A plunger with the dimensions below and a handmade spring with a 0.2mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring.
+A plunger with the dimensions below and a handmade spring with a 0.2mm wire can yield great results. The advantage of this is to manufacture something that is exclusive to your needs. With these dimensions I was able to engrave steel and also fine tune it to set 1.3mm stones pave style. The 0.7 mm step is the place to fit the spring, this solenoid should be powered at 12V 25% duty cycle maximun.
 
 ![](Pictures/Aspose.Words.a1b2dc12-f32a-4c42-b293-afb59d340340.003.png)
 
@@ -119,6 +118,14 @@ What has to be done when assembling it safelly:
 2. Use a weaker PSU just to check the main connections.
 3. Assemble everything and test it for a split second to verify short circuits in your assembled handpiece. To avoid heating of the handpiece don't forget the Flyback diode.
 4. Enjoy!
+
+---
+# **Custom board V2**
+The custom board below has already the connections made and it's only up to you to connect the power lines, pedal, graver and your own Arduino Nano. You can order the boards on PCB manufacturers that send it to the whole world like PCBWay and JLCPcb.
+You can find the design on the [custom board folder.](https://github.com/Savage-Sabrina/DIY_SolenoidGraver/tree/master/Schematic/Custom%20board%V2)
+The design is divided in 2 parts, the Arduino Nano Board and the Controll Board with buttons and potentiometers as shown below:
+![](Pictures/PCBControllBoardSimplified.png)
+![](Pictures/PCBMainPannelArduinoNano.png)
 
 ***
 # **Final considerations**
